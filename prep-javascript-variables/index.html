@@ -1,3 +1,5 @@
+<!-- eslint-disable prefer-const -->
+<!-- eslint-disable prefer-const -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -15,7 +17,8 @@
       console.log(likesVegetables);
       console.log(typeof likesVegetables);
       const nothing = null;
-      const never = console.log(nothing);
+      // eslint-disable-next-line prefer-const
+      let never = console.log(nothing);
       console.log(typeof nothing);
       console.log(never);
       console.log(typeof never);
